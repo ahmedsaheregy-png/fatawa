@@ -462,6 +462,35 @@
         <p>جميع الحقوق محفوظة &copy; 2026 - بنك سويا</p>
     </footer>
 
+
+    <!-- Image Loading Optimization Script -->
+    <script>
+        // Improve image loading performance
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+
+            images.forEach(img => {
+                // Add decoding async for better performance
+                img.decoding = 'async';
+
+                // Add fade-in effect when loaded
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+
+                if (img.complete) {
+                    img.style.opacity = '1';
+                } else {
+                    img.addEventListener('load', function () {
+                        this.style.opacity = '1';
+                    });
+                    img.addEventListener('error', function () {
+                        this.style.opacity = '1';
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
