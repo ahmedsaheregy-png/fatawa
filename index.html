@@ -8,7 +8,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Icons (Optional but good for UI) -->
@@ -305,21 +307,23 @@
 
         <div class="grid">
 
-            <!-- Video 0: Partners Page Video (Prioritized) -->
-            <div class="card" style="border: 2px solid var(--accent-color);">
-                <a href="https://www.youtube.com/watch?v=6TjnP26rj3k" target="_blank" class="video-thumbnail">
-                    <img src="assets/images/thumbnails/thumb_partners_limit.jpg" alt="الحكم الشرعي للمشروع">
+            <!-- Video 0: Ahmed Saher (Featured) -->
+            <div class="card featured-card" style="border: 2px solid var(--accent-color);">
+                <a href="https://www.youtube.com/watch?v=6TjnP26rj3k" target="_blank" class="video-thumbnail"
+                    style="flex: 1.2;">
+                    <img src="assets/images/thumbnails/thumb_partners_limit.jpg" alt="أ. أحمد ساهر">
                     <div class="play-icon"><i class="fa-solid fa-play"></i></div>
                 </a>
-                <div class="card-body">
+                <div class="card-body" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
                     <div class="card-author">
                         <span style="font-size: 2rem; color: var(--accent-color); float: left;"><i
                                 class="fa-solid fa-star"></i></span>
-                        <h3>فيديو من صفحة الشركاء</h3>
+                        <h3>أ. أحمد ساهر</h3>
+                        <span>باحث شرعي وخبير تسويق وإدارة أعمال</span>
                     </div>
-                    <span class="type-badge type-video" style="background:var(--accent-color); color:#fff;">هام
-                        جداً</span>
-                    <h4 class="card-title">الحكم الشرعي للمشروع وتوافق المعاملات مع الشريعة</h4>
+                    <span class="type-badge type-video"
+                        style="background:var(--accent-color); color:#fff; align-self: flex-start;">هام جداً</span>
+                    <h4 class="card-title">فيديو اساسي تمهيدي يشرح سبب وأصل اللبس داخل الاوساط العلمية</h4>
                 </div>
             </div>
 
@@ -397,24 +401,7 @@
                 </div>
             </div>
 
-            <!-- Video 5: Hossam Ali -->
-            <div class="card">
-                <a href="https://www.youtube.com/watch?v=rX_YV3qRptY" target="_blank" class="video-thumbnail">
-                    <img src="https://i.ytimg.com/vi/rX_YV3qRptY/hqdefault.jpg" alt="م. حسام علي"
-                        onerror="this.src='assets/images/thumbnails/thumb_partners_limit.jpg'">
-                    <div class="play-icon"><i class="fa-solid fa-play"></i></div>
-                </a>
-                <div class="card-body">
-                    <div class="card-author">
-                        <img src="https://i.ytimg.com/vi/rX_YV3qRptY/hqdefault.jpg" alt="م. حسام علي"
-                            style="width: 40px; height: 40px; float: left; border-radius: 50%; object-fit: cover; margin-left: 10px;"
-                            onerror="this.src='assets/images/thumbnails/thumb_partners_limit.jpg'">
-                        <h3>م. حسام علي</h3>
-                    </div>
-                    <span class="type-badge type-video">محاضرة</span>
-                    <h4 class="card-title">عمود الثقة الثالث: الجانب الشرعي</h4>
-                </div>
-            </div>
+
 
             <!-- Card 11: Iraqi Fatwa (New) -->
             <div class="card">
